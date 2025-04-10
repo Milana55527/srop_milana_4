@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .chart-container {
+            display: flex;
+            flex-direction: column;  /* Размещение диаграмм вертикально */
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        canvas {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 20px; /* Отступ между диаграммами */
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <canvas id="pieDoughnutChart"></canvas>
+        <canvas id="radarChart"></canvas>
+    </div>
+    <script src="diagrams.js"></script>
+</body>
+</html>
