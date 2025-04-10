@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Chart.js Diagrams</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 30px;
+      background: linear-gradient(to right, #f0f2f5, #d3e0ea);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    canvas {
+      max-width: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>Doughnut Chart</h2>
+  <canvas id="doughnutChart"></canvas>
+
+  <h2>Radar Chart</h2>
+  <canvas id="radarChart"></canvas>
+
+  <script src="diagrams.js"></script>
+</body>
+</html>
